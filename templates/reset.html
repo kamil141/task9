@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style type="text/css">
+        h1 {
+            color: chocolate;
+            font-family: 'Lucida Sans';
+        }
+        h2 {
+            color: darkgoldenrod;
+            font-family: 'Lucida Sans';
+        }
+        p {
+            color: black;
+            font-family: 'Lucida Sans';
+            font-size: medium;
+            line-height: 2;
+            word-wrap: break-word;
+        }
+    </style>
+<head>
+    <title>Hello to the Cloud Academy</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Welcome to the page!</h1>
+    <h2>All counter have been restarted!</h2>
+    <p>
+        All total visits: {{ all_visitors }}</br>
+        All visits since the restart: {{ session_visitors }}</br>
+        Server started at: {{ start_date }}</br>
+    </p>
+</body>
+</html>

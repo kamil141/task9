@@ -1,0 +1,16 @@
+# pull official base image
+FROM python:3.7-alpine3.15
+
+# set work directory
+WORKDIR /usr/src/app
+
+# set environment variables
+
+
+# expose the app port
+EXPOSE 8000
+
+# copy project
+COPY . .
+CMD ["gunicorn","-w 4", "-b","0.0.0.0:8000", "main.app"]
+
