@@ -37,8 +37,8 @@ services:
         build: ./haproxy
         container_name: haproxy
         ports:
-            - "8002:80"
-            - "8005:443"
+            - "80:80"
+            - "443:443"
             - "8404:8404"  
         depends_on:
             - redis  
